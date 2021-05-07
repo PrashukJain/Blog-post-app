@@ -1,0 +1,26 @@
+.heading {
+  text-align: center;
+  font-weight: bolder;
+  
+}
+.image {
+  width: 40px;
+  height: 40px;
+}
+.footerOfHeader {
+  border: 2px dashed;
+  background-color: aquamarine;
+  min-height: 50px;
+}
+.newButton {
+  float: right;
+}
+button {
+  box-shadow: 2px 4px black;
+  margin-right: 4px;
+}
+.innerDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px;
+}

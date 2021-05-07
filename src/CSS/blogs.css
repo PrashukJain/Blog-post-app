@@ -1,0 +1,11 @@
+
+.element{
+    border: 2px solid;
+    height: 100px;
+    background-color: white;
+    
+}
+.element:hover{
+    background-color: gold;
+    font-weight:bold;
+}
