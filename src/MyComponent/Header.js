@@ -8,7 +8,7 @@ export default function Header(props) {
   const history = useHistory();
   const handleOnClick = () => history.push("/add");
   const handleLink = () => history.push("/");
-
+  console.log("hello");
   const location = useLocation();
   const store = useStore();
   const data = [
@@ -28,7 +28,7 @@ export default function Header(props) {
 
   let headingUrl = data[props.index];
   let thirdlayer;
-  if (props.index === '2' || props.index === '3') {
+  if (props.index === "2" || props.index === "3") {
     thirdlayer = (
       <div style={{ marginTop: "6px" }}>
         <Link onClick={handleLink} to="/">
@@ -36,7 +36,7 @@ export default function Header(props) {
         </Link>
       </div>
     );
-  } else if (props.index === '1') {
+  } else if (props.index === "1") {
     let blogs = store.getState().blogItems.blogData;
     const myparam = location.state.params;
     let handleLike = () => {
